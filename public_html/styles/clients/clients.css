@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto 10px auto;
+  width: 100% !important;
+  height: 334px !important;
+  float: left;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: auto!important;
+  margin-left: 0!important;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  /*background: #ccc;*/
+  text-align: center;
+  line-height: 300px;
+}
+
+.control_prev, .control_next {
+	font-family: Calibri, Arial, sans-serif;
+  	position: absolute;
+	top: 90%;
+	z-index: 999;
+	display: block;
+	padding: 5px 2%;
+	width: auto;
+	height: auto;
+	background: #2a2a2a;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 11px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.control_prev:hover, .control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+.control_prev {
+  /*border-radius: 0 2px 2px 0;*/
+  left: 255px;
+}
+
+.control_next {
+  right: 20px;
+  /*border-radius: 2px 0 0 2px;*/
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
