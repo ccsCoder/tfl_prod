@@ -1,380 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
-<title>Business Intelligence - Techno Flair Lab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Business Intelligence - Techno Flair Lab</title>
 
-<meta charset="UTF-8">
-<!--[if lt IE 9]>
-<script src="scripts/html5shiv.min.js"></script>
-<![endif]-->
-<link href="styles/font-awesome.css" type="text/css" rel="stylesheet" />
-
-<link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
-<link href="styles/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="scripts/bootstrap.js"></script>
-
-<!--Menu Style Starts-->
-<link href="styles/sm-core-css.css" type="text/css" rel="stylesheet" />
-<link href="styles/sm-clean.css" type="text/css" rel="stylesheet" />
-
-
-<script src="scripts/jquery-1.8.0.min.js" type="text/javascript"></script>
-<!--[if lt IE 9]>
-                <script src="js/modernizr.custom.js"></script>
+        <meta charset="UTF-8">
+        <!--[if lt IE 9]>
+        <script src="scripts/html5shiv.min.js"></script>
         <![endif]-->
-<script src="scripts/functions.js" type="text/javascript"></script>
-<script src="scripts/jquery.smartmenus.js" type="text/javascript"></script>
+        <link href="styles/font-awesome.css" type="text/css" rel="stylesheet" />
+
+        <link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
+        <link href="styles/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="scripts/bootstrap.js"></script>
+
+        <!--Menu Style Starts-->
+        <link href="styles/sm-core-css.css" type="text/css" rel="stylesheet" />
+        <link href="styles/sm-clean.css" type="text/css" rel="stylesheet" />
+
+
+        <script src="scripts/jquery-1.8.0.min.js" type="text/javascript"></script>
+        <!--[if lt IE 9]>
+                        <script src="js/modernizr.custom.js"></script>
+                <![endif]-->
+        <script src="scripts/functions.js" type="text/javascript"></script>
+        <script src="scripts/jquery.smartmenus.js" type="text/javascript"></script>
         <script type="text/javascript">
             var handle = new EventHandlers();
             var bs = new Bootstrap();
             //set parameters
-            bs.handler=handle;
-            bs.carousel=true;   //events is true by default, carousel is disabled by default, expandcollapse is disabled by default.
+            bs.handler = handle;
+            bs.carousel = true;   //events is true by default, carousel is disabled by default, expandcollapse is disabled by default.
             $(document).ready(function(e) {
-               bs.init(bs); 
+                bs.init(bs);
             });
         </script>
-<!--Menu Style Ends-->
+        <!--Menu Style Ends-->
 
-<!--Form Style Starts-->
-	<link rel="stylesheet" type="text/css" href="styles/form/component.css" />
-<!--Form Style Ends-->
+        <!--Form Style Starts-->
+        <link rel="stylesheet" type="text/css" href="styles/form/component.css" />
+        <!--Form Style Ends-->
 
-<script type="text/javascript" src="scripts/tfl_script.js"></script>
-<link href="styles/animation.css" type="text/css" rel="stylesheet" />
-<link href="styles/tfl.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="scripts/tfl_script.js"></script>
+        <link href="styles/animation.css" type="text/css" rel="stylesheet" />
+        <link href="styles/tfl.css" type="text/css" rel="stylesheet" />
 
-        
-</head>
 
-<body>
-	<div class="md-modal md-effect-1" id="modal-1">
-			<div class="md-content">
-					<form id="sendmailform" action="action.php" method="post">
+    </head>
+
+    <body>
+        <div class="md-modal md-effect-1" id="modal-1">
+            <div class="md-content">
+                <form id="sendmailform" action="action.php" method="post">
                     <h1>Contact Form</h1>
-                                    <input required type="text" placeholder="First Name" id="txtname" name="txtname"/><br/>
-                                    <input required type="text" placeholder="Last Name" id="lastname" name="lastname"/><br/>
-                                    <input required type="text" placeholder="Company" id="company" name="company"/><br/>
-                                    <input required type="text" placeholder="Email" id="txtemail" name="txtemail" /><br/>
-                                    <input required type="text" placeholder="Phone" id="txtphone" name="txtphone" /><br/>
-                                    <select name="country">
-                                    	<option value="#">Select Your Country</option>
-                                        <option value="AF">Afghanistan</option>
-                                        <option value="AL">Albania</option>
-                                        <option value="DZ">Algeria</option>
-                                        <option value="AS">American Samoa</option>
-                                        <option value="AD">Andorra</option>
-                                        <option value="AG">Angola</option>
-                                        <option value="AI">Anguilla</option>
-                                        <option value="AG">Antigua &amp; Barbuda</option>
-                                        <option value="AR">Argentina</option>
-                                        <option value="AA">Armenia</option>
-                                        <option value="AW">Aruba</option>
-                                        <option value="AU">Australia</option>
-                                        <option value="AT">Austria</option>
-                                        <option value="AZ">Azerbaijan</option>
-                                        <option value="BS">Bahamas</option>
-                                        <option value="BH">Bahrain</option>
-                                        <option value="BD">Bangladesh</option>
-                                        <option value="BB">Barbados</option>
-                                        <option value="BY">Belarus</option>
-                                        <option value="BE">Belgium</option>
-                                        <option value="BZ">Belize</option>
-                                        <option value="BJ">Benin</option>
-                                        <option value="BM">Bermuda</option>
-                                        <option value="BT">Bhutan</option>
-                                        <option value="BO">Bolivia</option>
-                                        <option value="BL">Bonaire</option>
-                                        <option value="BA">Bosnia &amp; Herzegovina</option>
-                                        <option value="BW">Botswana</option>
-                                        <option value="BR">Brazil</option>
-                                        <option value="BC">British Indian Ocean Ter</option>
-                                        <option value="BN">Brunei</option>
-                                        <option value="BG">Bulgaria</option>
-                                        <option value="BF">Burkina Faso</option>
-                                        <option value="BI">Burundi</option>
-                                        <option value="KH">Cambodia</option>
-                                        <option value="CM">Cameroon</option>
-                                        <option value="CA">Canada</option>
-                                        <option value="IC">Canary Islands</option>
-                                        <option value="CV">Cape Verde</option>
-                                        <option value="KY">Cayman Islands</option>
-                                        <option value="CF">Central African Republic</option>
-                                        <option value="TD">Chad</option>
-                                        <option value="CD">Channel Islands</option>
-                                        <option value="CL">Chile</option>
-                                        <option value="CN">China</option>
-                                        <option value="CI">Christmas Island</option>
-                                        <option value="CS">Cocos Island</option>
-                                        <option value="CO">Colombia</option>
-                                        <option value="CC">Comoros</option>
-                                        <option value="CG">Congo</option>
-                                        <option value="CK">Cook Islands</option>
-                                        <option value="CR">Costa Rica</option>
-                                        <option value="CT">Cote D'Ivoire</option>
-                                        <option value="HR">Croatia</option>
-                                        <option value="CU">Cuba</option>
-                                        <option value="CB">Curacao</option>
-                                        <option value="CY">Cyprus</option>
-                                        <option value="CZ">Czech Republic</option>
-                                        <option value="DK">Denmark</option>
-                                        <option value="DJ">Djibouti</option>
-                                        <option value="DM">Dominica</option>
-                                        <option value="DO">Dominican Republic</option>
-                                        <option value="TM">East Timor</option>
-                                        <option value="EC">Ecuador</option>
-                                        <option value="EG">Egypt</option>
-                                        <option value="SV">El Salvador</option>
-                                        <option value="GQ">Equatorial Guinea</option>
-                                        <option value="ER">Eritrea</option>
-                                        <option value="EE">Estonia</option>
-                                        <option value="ET">Ethiopia</option>
-                                        <option value="FA">Falkland Islands</option>
-                                        <option value="FO">Faroe Islands</option>
-                                        <option value="FJ">Fiji</option>
-                                        <option value="FI">Finland</option>
-                                        <option value="FR">France</option>
-                                        <option value="GF">French Guiana</option>
-                                        <option value="PF">French Polynesia</option>
-                                        <option value="FS">French Southern Ter</option>
-                                        <option value="GA">Gabon</option>
-                                        <option value="GM">Gambia</option>
-                                        <option value="GE">Georgia</option>
-                                        <option value="DE">Germany</option>
-                                        <option value="GH">Ghana</option>
-                                        <option value="GI">Gibraltar</option>
-                                        <option value="GB">Great Britain</option>
-                                        <option value="GR">Greece</option>
-                                        <option value="GL">Greenland</option>
-                                        <option value="GD">Grenada</option>
-                                        <option value="GP">Guadeloupe</option>
-                                        <option value="GU">Guam</option>
-                                        <option value="GT">Guatemala</option>
-                                        <option value="GN">Guinea</option>
-                                        <option value="GY">Guyana</option>
-                                        <option value="HT">Haiti</option>
-                                        <option value="HW">Hawaii</option>
-                                        <option value="HN">Honduras</option>
-                                        <option value="HK">Hong Kong</option>
-                                        <option value="HU">Hungary</option>
-                                        <option value="IS">Iceland</option>
-                                        <option value="IN">India</option>
-                                        <option value="ID">Indonesia</option>
-                                        <option value="IA">Iran</option>
-                                        <option value="IQ">Iraq</option>
-                                        <option value="IR">Ireland</option>
-                                        <option value="IM">Isle of Man</option>
-                                        <option value="IL">Israel</option>
-                                        <option value="IT">Italy</option>
-                                        <option value="JM">Jamaica</option>
-                                        <option value="JP">Japan</option>
-                                        <option value="JO">Jordan</option>
-                                        <option value="KZ">Kazakhstan</option>
-                                        <option value="KE">Kenya</option>
-                                        <option value="KI">Kiribati</option>
-                                        <option value="NK">Korea North</option>
-                                        <option value="KS">Korea South</option>
-                                        <option value="KW">Kuwait</option>
-                                        <option value="KG">Kyrgyzstan</option>
-                                        <option value="LA">Laos</option>
-                                        <option value="LV">Latvia</option>
-                                        <option value="LB">Lebanon</option>
-                                        <option value="LS">Lesotho</option>
-                                        <option value="LR">Liberia</option>
-                                        <option value="LY">Libya</option>
-                                        <option value="LI">Liechtenstein</option>
-                                        <option value="LT">Lithuania</option>
-                                        <option value="LU">Luxembourg</option>
-                                        <option value="MO">Macau</option>
-                                        <option value="MK">Macedonia</option>
-                                        <option value="MG">Madagascar</option>
-                                        <option value="MY">Malaysia</option>
-                                        <option value="MW">Malawi</option>
-                                        <option value="MV">Maldives</option>
-                                        <option value="ML">Mali</option>
-                                        <option value="MT">Malta</option>
-                                        <option value="MH">Marshall Islands</option>
-                                        <option value="MQ">Martinique</option>
-                                        <option value="MR">Mauritania</option>
-                                        <option value="MU">Mauritius</option>
-                                        <option value="ME">Mayotte</option>
-                                        <option value="MX">Mexico</option>
-                                        <option value="MI">Midway Islands</option>
-                                        <option value="MD">Moldova</option>
-                                        <option value="MC">Monaco</option>
-                                        <option value="MN">Mongolia</option>
-                                        <option value="MS">Montserrat</option>
-                                        <option value="MA">Morocco</option>
-                                        <option value="MZ">Mozambique</option>
-                                        <option value="MM">Myanmar</option>
-                                        <option value="NA">Nambia</option>
-                                        <option value="NU">Nauru</option>
-                                        <option value="NP">Nepal</option>
-                                        <option value="AN">Netherland Antilles</option>
-                                        <option value="NL">Netherlands (Holland, Europe)</option>
-                                        <option value="NV">Nevis</option>
-                                        <option value="NC">New Caledonia</option>
-                                        <option value="NZ">New Zealand</option>
-                                        <option value="NI">Nicaragua</option>
-                                        <option value="NE">Niger</option>
-                                        <option value="NG">Nigeria</option>
-                                        <option value="NW">Niue</option>
-                                        <option value="NF">Norfolk Island</option>
-                                        <option value="NO">Norway</option>
-                                        <option value="OM">Oman</option>
-                                        <option value="PK">Pakistan</option>
-                                        <option value="PW">Palau Island</option>
-                                        <option value="PS">Palestine</option>
-                                        <option value="PA">Panama</option>
-                                        <option value="PG">Papua New Guinea</option>
-                                        <option value="PY">Paraguay</option>
-                                        <option value="PE">Peru</option>
-                                        <option value="PH">Philippines</option>
-                                        <option value="PO">Pitcairn Island</option>
-                                        <option value="PL">Poland</option>
-                                        <option value="PT">Portugal</option>
-                                        <option value="PR">Puerto Rico</option>
-                                        <option value="QA">Qatar</option>
-                                        <option value="ME">Republic of Montenegro</option>
-                                        <option value="RS">Republic of Serbia</option>
-                                        <option value="RE">Reunion</option>
-                                        <option value="RO">Romania</option>
-                                        <option value="RU">Russia</option>
-                                        <option value="RW">Rwanda</option>
-                                        <option value="NT">St Barthelemy</option>
-                                        <option value="EU">St Eustatius</option>
-                                        <option value="HE">St Helena</option>
-                                        <option value="KN">St Kitts-Nevis</option>
-                                        <option value="LC">St Lucia</option>
-                                        <option value="MB">St Maarten</option>
-                                        <option value="PM">St Pierre &amp; Miquelon</option>
-                                        <option value="VC">St Vincent &amp; Grenadines</option>
-                                        <option value="SP">Saipan</option>
-                                        <option value="SO">Samoa</option>
-                                        <option value="AS">Samoa American</option>
-                                        <option value="SM">San Marino</option>
-                                        <option value="ST">Sao Tome &amp; Principe</option>
-                                        <option value="SA">Saudi Arabia</option>
-                                        <option value="SN">Senegal</option>
-                                        <option value="RS">Serbia</option>
-                                        <option value="SC">Seychelles</option>
-                                        <option value="SL">Sierra Leone</option>
-                                        <option value="SG">Singapore</option>
-                                        <option value="SK">Slovakia</option>
-                                        <option value="SI">Slovenia</option>
-                                        <option value="SB">Solomon Islands</option>
-                                        <option value="OI">Somalia</option>
-                                        <option value="ZA">South Africa</option>
-                                        <option value="ES">Spain</option>
-                                        <option value="LK">Sri Lanka</option>
-                                        <option value="SD">Sudan</option>
-                                        <option value="SR">Suriname</option>
-                                        <option value="SZ">Swaziland</option>
-                                        <option value="SE">Sweden</option>
-                                        <option value="CH">Switzerland</option>
-                                        <option value="SY">Syria</option>
-                                        <option value="TA">Tahiti</option>
-                                        <option value="TW">Taiwan</option>
-                                        <option value="TJ">Tajikistan</option>
-                                        <option value="TZ">Tanzania</option>
-                                        <option value="TH">Thailand</option>
-                                        <option value="TG">Togo</option>
-                                        <option value="TK">Tokelau</option>
-                                        <option value="TO">Tonga</option>
-                                        <option value="TT">Trinidad &amp; Tobago</option>
-                                        <option value="TN">Tunisia</option>
-                                        <option value="TR">Turkey</option>
-                                        <option value="TU">Turkmenistan</option>
-                                        <option value="TC">Turks &amp; Caicos Is</option>
-                                        <option value="TV">Tuvalu</option>
-                                        <option value="UG">Uganda</option>
-                                        <option value="UA">Ukraine</option>
-                                        <option value="AE">United Arab Emirates</option>
-                                        <option value="GB">United Kingdom</option>
-                                        <option value="US">United States of America</option>
-                                        <option value="UY">Uruguay</option>
-                                        <option value="UZ">Uzbekistan</option>
-                                        <option value="VU">Vanuatu</option>
-                                        <option value="VS">Vatican City State</option>
-                                        <option value="VE">Venezuela</option>
-                                        <option value="VN">Vietnam</option>
-                                        <option value="VB">Virgin Islands (Brit)</option>
-                                        <option value="VA">Virgin Islands (USA)</option>
-                                        <option value="WK">Wake Island</option>
-                                        <option value="WF">Wallis &amp; Futana Is</option>
-                                        <option value="YE">Yemen</option>
-                                        <option value="ZR">Zaire</option>
-                                        <option value="ZM">Zambia</option>
-                                        <option value="ZW">Zimbabwe</option>
-                                    </select><br />
-                                    <select name="interested">
-                                    	<option value="#">Which Area Are You Interested In</option>
-                                        <option value="About">About</option>
-                                        <option value="Elab">E-Lab</option>
-                                        <option value="Etechnologies">E-Technologies</option>
-                                        <option value="Elaboratory">E-Laboratory</option>
-                                        <option value="Econsulting">E-Consulting</option>
-                                    </select><br />
-                                    <div class="contact_btn">
-                                      <!--<div class="clear">
-                                         
-                                         <input type="reset" value="Clear" class="reset"/>
-                                       </div>-->
-                                       <div class="send">
-                                      	  <input type="hidden" name="uid" value="[@member_id]"/>
-			                              <input type="submit" value="Send" class="submit" style="margin-bottom: 0px;"/>
-                                       </div>
-                                    </div>
-                                </form>
-					<div class="md-close">X</div>
-			</div>
-	</div>
+                    <input required type="text" placeholder="First Name" id="txtname" name="txtname"/><br/>
+                    <input required type="text" placeholder="Last Name" id="lastname" name="lastname"/><br/>
+                    <input required type="text" placeholder="Company" id="company" name="company"/><br/>
+                    <input required type="text" placeholder="Email" id="txtemail" name="txtemail" /><br/>
+                    <input required type="text" placeholder="Phone" id="txtphone" name="txtphone" /><br/>
+                    <select name="country">
+                        <option value="#">Select Your Country</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AG">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AG">Antigua &amp; Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AA">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BL">Bonaire</option>
+                        <option value="BA">Bosnia &amp; Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BR">Brazil</option>
+                        <option value="BC">British Indian Ocean Ter</option>
+                        <option value="BN">Brunei</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="IC">Canary Islands</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CD">Channel Islands</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CI">Christmas Island</option>
+                        <option value="CS">Cocos Island</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CC">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CT">Cote D'Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CB">Curacao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="TM">East Timor</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FA">Falkland Islands</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="FS">French Southern Ter</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GB">Great Britain</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HW">Hawaii</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IA">Iran</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IR">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="NK">Korea North</option>
+                        <option value="KS">Korea South</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Laos</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macau</option>
+                        <option value="MK">Macedonia</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="ME">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="MI">Midway Islands</option>
+                        <option value="MD">Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Nambia</option>
+                        <option value="NU">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="AN">Netherland Antilles</option>
+                        <option value="NL">Netherlands (Holland, Europe)</option>
+                        <option value="NV">Nevis</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NW">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau Island</option>
+                        <option value="PS">Palestine</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PO">Pitcairn Island</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="ME">Republic of Montenegro</option>
+                        <option value="RS">Republic of Serbia</option>
+                        <option value="RE">Reunion</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russia</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="NT">St Barthelemy</option>
+                        <option value="EU">St Eustatius</option>
+                        <option value="HE">St Helena</option>
+                        <option value="KN">St Kitts-Nevis</option>
+                        <option value="LC">St Lucia</option>
+                        <option value="MB">St Maarten</option>
+                        <option value="PM">St Pierre &amp; Miquelon</option>
+                        <option value="VC">St Vincent &amp; Grenadines</option>
+                        <option value="SP">Saipan</option>
+                        <option value="SO">Samoa</option>
+                        <option value="AS">Samoa American</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome &amp; Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="OI">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syria</option>
+                        <option value="TA">Tahiti</option>
+                        <option value="TW">Taiwan</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad &amp; Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TU">Turkmenistan</option>
+                        <option value="TC">Turks &amp; Caicos Is</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States of America</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VS">Vatican City State</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="VB">Virgin Islands (Brit)</option>
+                        <option value="VA">Virgin Islands (USA)</option>
+                        <option value="WK">Wake Island</option>
+                        <option value="WF">Wallis &amp; Futana Is</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZR">Zaire</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select><br />
+                    <select name="interested">
+                        <option value="#">Which Area Are You Interested In</option>
+                        <option value="About">About</option>
+                        <option value="Elab">E-Lab</option>
+                        <option value="Etechnologies">E-Technologies</option>
+                        <option value="Elaboratory">E-Laboratory</option>
+                        <option value="Econsulting">E-Consulting</option>
+                    </select><br />
+                    <div class="contact_btn">
+                        <!--<div class="clear">
+                           
+                           <input type="reset" value="Clear" class="reset"/>
+                         </div>-->
+                        <div class="send">
+                            <input type="hidden" name="uid" value="[@member_id]"/>
+                            <input type="submit" value="Send" class="submit" style="margin-bottom: 0px;"/>
+                        </div>
+                    </div>
+                </form>
+                <div class="md-close">X</div>
+            </div>
+        </div>
 
-    	<div class="wrapper">
-        	<div class="container" id="container">
-            	<header>
-                	<div class="logo">
-                    	<figure>
-                        	<a href="home.html"><img src="images/techno_flair_lab_logo.png" alt="Techno Flair Lab Logo" title="Techno Flair Lab" /></a>
+        <div class="wrapper">
+            <div class="container" id="container">
+                <header>
+                    <div class="logo">
+                        <figure>
+                            <a href="home.html"><img src="images/techno_flair_lab_logo.png" alt="Techno Flair Lab Logo" title="Techno Flair Lab" /></a>
                         </figure>
                     </div>
                     <nav>
-						<div id="mobile_nav"> 
-	                    	<div>
-                            	<select onchange="location.href = document.getElementById('mobileMainMenu').value;" class="" id="mobileMainMenu" name="menu">
-                            	<!--<select name="menu" onchange="location = this.options[this.selectedIndex].value;" id="Main menu">-->
-	                                <option value="#">Main Menu</option>
+                        <div id="mobile_nav"> 
+                            <div>
+                                <select onchange="location.href = document.getElementById('mobileMainMenu').value;" class="" id="mobileMainMenu" name="menu">
+                                    <!--<select name="menu" onchange="location = this.options[this.selectedIndex].value;" id="Main menu">-->
+                                    <option value="#">Main Menu</option>
                                     <option value="what_we_do.html">About</option>
-                                    	<option value="what_we_do.html">&nbsp;&nbsp;>What We Do</option>
-                                        <option value="how_we_do.html">&nbsp;&nbsp;>How We Do</option>
-                                        <option value="who_we_are.html">&nbsp;&nbsp;>Who We Are</option>
+                                    <option value="what_we_do.html">&nbsp;&nbsp;>What We Do</option>
+                                    <option value="how_we_do.html">&nbsp;&nbsp;>How We Do</option>
+                                    <option value="who_we_are.html">&nbsp;&nbsp;>Who We Are</option>
                                     <!--<option value="research_development.html">E-Lab</option>
-                                    	<option value="research_development.html">&nbsp;&nbsp;>Research &amp; Development</option>
+                                        <option value="research_development.html">&nbsp;&nbsp;>Research &amp; Development</option>
                                         <option value="e_recovery.html">&nbsp;&nbsp;>E-Recovery</option>-->
                                     <option value="business_intelligence.html">E-Technologies</option>
-                                    	<option value="business_intelligence.html">&nbsp;&nbsp;>Business Intelligence</option>
-                                        <option value="cloud_computing.html">&nbsp;&nbsp;>Cloud Computing</option>
-                                        <option value="infrastructure_services.html">&nbsp;&nbsp;>Infrastructure Services</option>
+                                    <option value="business_intelligence.html">&nbsp;&nbsp;>Business Intelligence</option>
+                                    <option value="cloud_computing.html">&nbsp;&nbsp;>Cloud Computing</option>
+                                    <option value="infrastructure_services.html">&nbsp;&nbsp;>Infrastructure Services</option>
                                     <option value="online_training.html">E-Laboratory</option>
-                               			<!--<option value="#">&nbsp;&nbsp;>Order Now!-CBT</option>-->
-                                        <option value="cloud_computing.html">&nbsp;&nbsp;>online_training</option>
-                                        <!--<option value="#">&nbsp;&nbsp;>Career Counselling</option>-->
-                                        <option value="research_development.html">&nbsp;&nbsp;>Research &amp; Development</option>
-                                        <option value="e_recovery.html">&nbsp;&nbsp;>E-Recovery</option>
+                                    <!--<option value="#">&nbsp;&nbsp;>Order Now!-CBT</option>-->
+                                    <option value="cloud_computing.html">&nbsp;&nbsp;>online_training</option>
+                                    <!--<option value="#">&nbsp;&nbsp;>Career Counselling</option>-->
+                                    <option value="research_development.html">&nbsp;&nbsp;>Research &amp; Development</option>
+                                    <option value="e_recovery.html">&nbsp;&nbsp;>E-Recovery</option>
                                     <option value="home.html">E-Consulting</option>
-                                    	<option value="business_consulting.html">&nbsp;&nbsp;>Business Consulting</option>
-                                        <option value="it_consulting.html">&nbsp;&nbsp;>IT Consulting</option>
-                                        <option value="product_consulting.html">&nbsp;&nbsp;>Product Consulting</option>
+                                    <option value="business_consulting.html">&nbsp;&nbsp;>Business Consulting</option>
+                                    <option value="it_consulting.html">&nbsp;&nbsp;>IT Consulting</option>
+                                    <option value="product_consulting.html">&nbsp;&nbsp;>Product Consulting</option>
                                     <option value="i-connect.html">I-Connect</option>
                                 </select>
                             </div>
                         </div>
-                    	<div class="nav">
+                        <div class="nav">
                             <!--<a href="#" class="nav-btn" data-flexmenu="flexmenu1"><span style="color:#6FA632">ABOUT</span><span class="arr"></span></a>-->
                             <ul id="navigationMenu" class="sm sm-clean">
-                            	<li class="nav-menu_item_neo">
+                                <li class="nav-menu_item_neo">
                                     <a class="has-submenu" href="home.html"><span>Home</span></a>
                                 </li>
                                 <li class="nav-menu_item_neo">
@@ -385,7 +385,7 @@
                                         <li><a href="who_we_are.html">Who we are?</a></li>
                                     </ul>
                                 </li>
-                        
+
                                 <!--<li class="nav-menu_item_neo">
                                     <a class="has-submenu"><span class="sub-arrow">+</span>e-Lab</a>
                                     <ul>
@@ -395,8 +395,8 @@
                                         </li>
                                     </ul>
                                 </li>-->
-                        
-                               <li class="nav-menu_item_neo">
+
+                                <li class="nav-menu_item_neo">
                                     <a class="has-submenu active" id="active1"><span class="sub-arrow">+</span><span><i class="fa fa-cogs"></i></span></a>
                                     <ul>
                                         <li><a href="business_intelligence.html">Business Intelligence</a>
@@ -422,127 +422,168 @@
                                         <li><a href="business_consulting.html">Business Consulting</a></li>
                                         <li><a href="it_consulting.html">IT Consulting</a></li>
                                         <li><a href="product_consulting.html">Product Consulting</a></li>
-                        
+
                                     </ul>
                                 </li>
                                 <li class="nav-menu_item_neo">
                                     <a href="i-connect.html">i-Connect</a>
                                 </li>
                             </ul>
-                        
+
                         </div>
                     </nav>
                 </header>
-            	<section class="inner_banner">
-					<h2 class="action1 animated tada" data-animation="flash" style="opacity: 1;">Business Intelligence</h2>
+                <section class="inner_banner">
+                    <h2 class="action1 animated tada" data-animation="flash" style="opacity: 1;">Business Intelligence</h2>
                 </section>
                	<div class="content" id="content">
-               	  <section class="inner_pages">
-                    	<ul>
-                        	<li class="intro1">
-                            	<img src="images/bi.png" alt="Business Intelligence" />
+                    <section class="inner_pages">
+                        <ul>
+                            <li class="intro1">
+                                <img src="images/bi.png" alt="Business Intelligence" />
                                 <p>
-                                	According to leading analysts, Business Intelligence (BI) has been a top priority for worldwide organizations over the past five years, and will continue to be a priority in the near future.<br /><br />
-                                	<i><b>"4 Technologies That Are Reshaping Business Intelligence"</b></i><br /><br />
-Next-generation BI is being formed by <span class="red">Predictive Analytics, Real-Time Monitoring, In-Memory Processing and SaaS</span>.<br /><br />
-Next-generation BI has arrived, and three major factors are driving it: <span class="red">the spread of predictive analytics, more real-time performance monitoring, and much faster analysis, thanks to in-memory BI</span>. A fourth factor, software as a service (SaaS), promises to further alter the BI market by helping companies get these next-generation systems running more quickly.<br /><br />
-In the face of rising data volume and complexity and increased need for <span class="red">self-service</span>, enterprises need effective <span class="red">business intelligence (BI)</span> reference architecture to utilize BI as a key corporate asset for competitive differentiation.<br /><br />
-Forward-looking and <span class="red">real-time analyses</span> aren't brand-new BI concepts, but in-memory processing is making them more practical. Until next-generation in-memory products emerged, you usually needed pre-built cubes, pre-defined queries, summarized data, and long-running queries for "what if" exploration. All those requirements killed spontaneous exploration.<br /><br />
-This <span class="red">next generation of BI technology</span> is still evolving and comes with plenty of risk. Prediction typically requires statistical expertise that's scarce and pricey. Real-time monitoring of stream processing technology can be a lifesaver, but only if you can respond as quickly as you detect opportunity or risk.<br /><br />
-								<span class="red">Interactive Visualization</span> - <span class="green">Amplify mobile business intelligence with new and innovative visualizations allowing users to quickly pinpoint trends in data.</span><br /><br />
-                                <span class="red">Mobile</span> - <span class="green">Leverage native and optimized web applications for Android and iOS to support a broader range of smart phones and tablets.</span><br /><br />
-                                <span class="red">Performance</span> - <span class="green">Get insights quicker than ever before through performance improvements gained from more efficient memory usage, reduced memory footprint and improved use of compression.</span><br /><br />
-                                <span class="red">Big Data</span> - <span class="green">Gain a more complete view of the business and act quickly off insights with expanded support for big data sources including Hadoop, analytic data stores and real-time streaming data.</span><br /><br />
-                                <span class="red">We help companies to choose right tools for their organization. Our team analyzed and researched over 1,000 systems for identifying the best solution for companies of all shapes and sizes.</span>
-                                <img src="images/salesforce.png" id="inner_image">
-                                <img src="images/qlikview.png" id="inner_image">
-                                <img src="images/sap.png" id="inner_image">
-                                <img src="images/oracle.png" id="inner_image">
-                                <img src="images/sql.png" id="inner_image">
-								</p>
+                                    According to leading analysts, Business Intelligence (BI) has been a top priority for worldwide organizations
+                                    over the past five years, and will continue to be a priority in the near future. The last few years have brought 
+                                    a wave of changes for business intelligence (BI) solutions. A set of redefining technological trends is reshaping 
+                                    the landscape from a slow and cumbersome process practiced mainly by large enterprises
+                                    flexible, agile process that mid-market companies as well as individuals can utilize..<br/><br/>
+                                    
+                                    Business intelligence systems provide information on the history, current status or future projections of an
+                                    organization. Basically, anything that generates data that informs decision making could be considered a 
+                                    business intelligence system.
+
+                                    <br/><br/>
+                                    Next-generation BI is being formed by below technologies that are reshaping business intelligence -.
+                                    <br/><br/>
+                                    1.&nbsp;<strong>Predictive analytics:</strong> the ability to do better business forecasting using a mix of data and information
+                                    sources and analytical software.
+                                    <br/><br/>
+                                    2.&nbsp;<strong>Real-time business monitoring:</strong> the ability to better understand what is happening right now with the key 
+                                    performance factors of a business. 
+                                    <br/><br/>
+                                    3.&nbsp;<strong>In-memory processing of information:</strong> this is a bit geeky, but in-memory processing refers to ability to 
+                                    store and process lots of data and information at one time. In-memory processing is required to do real-time 
+                                    analytics on large data sets. 
+                                    <br/><br/>
+                                    4.&nbsp;<strong>Cloud delivery of business intelligence:</strong> the use of cloud and software as service delivery methods 
+                                    increases business intelligence deployment speed and flexibility. 
+                                    <br/><br/>
+                                    5.&nbsp;<strong>Interactive Visualization:</strong> Amplify mobile business intelligence with new and innovative visualizations 
+                                    allowing users to quickly pinpoint trends in data. 
+                                    <br/><br/>
+                                    6.&nbsp;<strong>Mobile:</strong> Leverage native and optimized web applications for Android and iOS to support a broader range 
+                                    of smart phones and tablets.
+                                    <br/><br/>
+                                    7.&nbsp;<strong>Performance:</strong> Get insights quicker than ever before through performance improvements gained from 
+                                    more efficient memory usage, reduced memory footprint and improved use of compression.
+                                    <br/><br/>
+                                    8.&nbsp;<strong>BIG DATA:</strong> Gain a more complete view of the business and act quickly off insights with expanded support 
+                                    for big data sources including Hadoop, analytic data stores and real-time streaming data.
+                                    <br/><br/>
+
+                                    Forward-looking and real-time analyses aren’t brand-new BI concepts, but in-memory processing is making 
+                                    them more practical. Until next-generation in-memory products emerged, you usually needed pre-built 
+                                    cubes, pre-defined queries, summarized data, and long-running queries for "what if" exploration. All those 
+                                    requirements killed spontaneous exploration.
+                                    <br/><br/>
+
+                                    Business intelligence systems provide insights on customers and business operations, improve decision 
+                                    making and reduce risk. These systems are augmenting and replacing "seat of the pants" management 
+                                    techniques and becoming increasingly popular with small businesses.
+                                    <br/><br/>
+
+                                    We help companies to choose right tools for their organization. Our team analyzed and researched over 
+                                    1,000 systems for identifying the best solution for companies of all shapes and sizes.
+                                    
+                                    <img src="images/salesforce.png" id="inner_image">
+                                    <img src="images/qlikview.png" id="inner_image">
+                                    <img src="images/sap.png" id="inner_image">
+                                    <img src="images/oracle.png" id="inner_image">
+                                    <img src="images/sql.png" id="inner_image">
+                                </p>
                             </li>
-                            <li class="full_content1">
-                            	<h4>IBM Cognos</h4>
+<!--                            <li class="full_content1">
+                                <h4>IBM Cognos</h4>
                                 <p>With a global user base of millions, Cognos is known as a leading provider of Business Intelligence tools. Cognos's latest release is a powerful suite of modules that share one common infrastructure for creating, managing, and deploying queries, reports, analyses, scorecards, dashboards, and alerts - all designed to support an organization's Business Intelligence objectives.</p>
                                 <img src="images/cognos.png" alt="IBM Cognos" />
                             </li>
-                            	<!--<li class="full_content">
-                                    <h3 id="click1" class="inner_head" title="Click to open">Interactive Visualization<i class="fa fa-arrows-v"></i></h3>
-                                    <p class="click1">Amplify mobile business intelligence with new and innovative visualizations allowing users to quickly pinpoint trends in data.</p>
-                                </li>
-                                <li class="full_content">
-                                    <h3 id="click2" class="inner_head" title="Click to open">Mobile<i class="fa fa-arrows-v"></i></h3>
-                                    <p class="click2">Leverage native and optimized web applications for Android and iOS to support a broader range of smart phones and tablets.</p>
-                                </li>
-                                <li class="full_content">
-                                    <h3 id="click3" class="inner_head" title="Click to open">Performance<i class="fa fa-arrows-v"></i></h3>
-                                    <p class="click3">Get insights quicker than ever before through performance improvements gained from more efficient memory usage, reduced memory footprint and improved use of compression.</p>
-                                </li>
-                                <li class="full_content">
-                                    <h3 id="click7" class="inner_head" title="Click to open">Big Data<i class="fa fa-arrows-v"></i></h3>
-                                    <p class="click7">Gain a more complete view of the business and act quickly off insights with expanded support for big data sources including Hadoop, analytic data stores and real-time streaming data.</p>
-                                </li>-->
-                                
-                                <li class="full_content">
-                                    <h3 id="click4" class="inner_head" title="Click to open">Dashboarding<i class="fa fa-arrows-v"></i></h3>
-                                    <p class="click4">Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.</p>
-                                </li>
-                                <li class="full_content">
-                                    <h3 id="click5" class="inner_head" title="Click to open">Mobility<i class="fa fa-arrows-v"></i></h3>
-                                    <p class="click5">Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.</p>
-                                </li>
-                                <li class="full_content">
-                                    <h3 id="click6" class="inner_head" title="Click to open">Professional Services<i class="fa fa-arrows-v"></i></h3>
-                                    <p class="click6">Ensure a successful elearning deployment with hands-on training, implementation support and technical assistance that meet the unique needs of your career.<br />
-    Implementation support including customization and integration with internal and third-party systems.
-    Custom Solutions developed based on client's requirements.<br />
-    Can be conducted on site, via phone and online – within the environment that best suits your needs.
-    Marketing support to drive your Business initiative.</p>
-                                </li>
-                            
+                            <li class="full_content">
+                                <h3 id="click1" class="inner_head" title="Click to open">Interactive Visualization<i class="fa fa-arrows-v"></i></h3>
+                                <p class="click1">Amplify mobile business intelligence with new and innovative visualizations allowing users to quickly pinpoint trends in data.</p>
+                            </li>
+                            <li class="full_content">
+                                <h3 id="click2" class="inner_head" title="Click to open">Mobile<i class="fa fa-arrows-v"></i></h3>
+                                <p class="click2">Leverage native and optimized web applications for Android and iOS to support a broader range of smart phones and tablets.</p>
+                            </li>
+                            <li class="full_content">
+                                <h3 id="click3" class="inner_head" title="Click to open">Performance<i class="fa fa-arrows-v"></i></h3>
+                                <p class="click3">Get insights quicker than ever before through performance improvements gained from more efficient memory usage, reduced memory footprint and improved use of compression.</p>
+                            </li>
+                            <li class="full_content">
+                                <h3 id="click7" class="inner_head" title="Click to open">Big Data<i class="fa fa-arrows-v"></i></h3>
+                                <p class="click7">Gain a more complete view of the business and act quickly off insights with expanded support for big data sources including Hadoop, analytic data stores and real-time streaming data.</p>
+                            </li>
+
+                            <li class="full_content">
+                                <h3 id="click4" class="inner_head" title="Click to open">Dashboarding<i class="fa fa-arrows-v"></i></h3>
+                                <p class="click4">Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.</p>
+                            </li>
+                            <li class="full_content">
+                                <h3 id="click5" class="inner_head" title="Click to open">Mobility<i class="fa fa-arrows-v"></i></h3>
+                                <p class="click5">Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.</p>
+                            </li>
+                            <li class="full_content">
+                                <h3 id="click6" class="inner_head" title="Click to open">Professional Services<i class="fa fa-arrows-v"></i></h3>
+                                <p class="click6">Ensure a successful elearning deployment with hands-on training, implementation support and technical assistance that meet the unique needs of your career.<br />
+                                    Implementation support including customization and integration with internal and third-party systems.
+                                    Custom Solutions developed based on client's requirements.<br />
+                                    Can be conducted on site, via phone and online – within the environment that best suits your needs.
+                                    Marketing support to drive your Business initiative.</p>
+                            </li>
+
                             <li class="full_content1">
-                            	<h4>ROAMBI</h4>
+                                <h4>ROAMBI</h4>
                                 <p>Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet.Lorem Ipsum Dolor sit amet</p>
                                 <img src="images/roambi.png" alt="Roambi" />
                             </li>
                             <li class="full_content">
-                            	<h4>Qlik View</h4>
+                                <h4>Qlik View</h4>
                                 <img src="images/qlik.png" style="margin: 0;" alt="Quick View" />
                                 <p class="inner_p">Expanding and managing a QlikView deployment across an enterprise requires a different approach than traditional Business Intelligence. With the right approach QlikView is radically easier and faster to deploy than traditional Business Intelligence solutions. Business Discovery is about enabling IT to empower business users with self-service analysis.</p>
                             </li>
                             <li class="full_content1">
-                            	<h4>Tableau</h4>
+                                <h4>Tableau</h4>
                                 <p>Tableau Desktop is best for small to medium sized businesses and enterprises. It works best for businesses in the industries of telecommunications, accounting, technology, banking, retail, education, real estate, and government, pharmaceuticals, health care, manufacturing and insurance. The software is used by thousands of companies located all over the world. <br>
-Tableau is also one of the most flexible software solutions in the market, and the software can be customized for several kinds of businesses in several kinds of industries. The software has so many features that can help each client meet their specific needs. All of them are customizable. And features such as design templates and color schemes can be chosen by the user. The program also uses technology that allows users to drag and drop data for analysis, allowing users to react and analyze quickly to create visuals that can be changed and viewed on real-time. 
-</p>
+                                    Tableau is also one of the most flexible software solutions in the market, and the software can be customized for several kinds of businesses in several kinds of industries. The software has so many features that can help each client meet their specific needs. All of them are customizable. And features such as design templates and color schemes can be chosen by the user. The program also uses technology that allows users to drag and drop data for analysis, allowing users to react and analyze quickly to create visuals that can be changed and viewed on real-time. 
+                                </p>
                                 <img src="images/tm1.png" alt="Tm1" />
-                            </li>
+                            </li>-->
                         </ul>
                     </section>
                 </div>
                 <footer>
-                    	<span><a href="home.html">Home</a> | <a href="what_we_do.html">About</a> | <a href="research_development.html">e-Lab</a> | <a href="business_intelligence.html">e-Technologies</a> | <a href="#">e-Laboratory</a> | <a href="business_consulting.html">e-Consulting</a> | <a href="i-connect.html">i-Connect</a><!--- | <a href="">Contact Us</a>--></span>
-                        <div>2014 &copy; Techno Flair Lab. All Rights Reserved.
-                        </div>
-                 </footer>
+                    <span><a href="home.html">Home</a> | <a href="what_we_do.html">About</a> | <a href="research_development.html">e-Lab</a> | <a href="business_intelligence.html">e-Technologies</a> | <a href="#">e-Laboratory</a> | <a href="business_consulting.html">e-Consulting</a> | <a href="i-connect.html">i-Connect</a><!--- | <a href="">Contact Us</a>--></span>
+                    <div>2014 &copy; Techno Flair Lab. All Rights Reserved.
+                    </div>
+                </footer>
             </div>
        	</div>
-    <div id="contact_icon">
-    	<div class="share_icon">
-        	<a href="#" class="md-trigger" data-modal="modal-1"><i class="fa fa-envelope-o"></i>&nbsp;</a><br />
-            <a href="https://www.facebook.com/TechnoFlairLab" target="_blank"><i class="fa fa-facebook-square"></i>&nbsp;</a><br />
-            <a href="https://twitter.com/technoflairlab" target="_blank"><i class="fa fa-twitter-square"></i>&nbsp;</a><br />
-            <a href="#" target="_blank"><i class="fa fa-skype"></i>&nbsp;</a><br />
+        <div id="contact_icon">
+            <div class="share_icon">
+                <a href="#" class="md-trigger" data-modal="modal-1"><i class="fa fa-envelope-o"></i>&nbsp;</a><br />
+                <a href="https://www.facebook.com/TechnoFlairLab" target="_blank"><i class="fa fa-facebook-square"></i>&nbsp;</a><br />
+                <a href="https://twitter.com/technoflairlab" target="_blank"><i class="fa fa-twitter-square"></i>&nbsp;</a><br />
+                <a href="#" target="_blank"><i class="fa fa-skype"></i>&nbsp;</a><br />
+            </div>
         </div>
-        </div>
-    <div class="md-overlay"></div>
-    <div id="back-top">
+        <div class="md-overlay"></div>
+        <div id="back-top">
             <a href="#"><span></span></a>
-    </div>
-    
-    <!--- Form starts -->
-		<script src="scripts/form/classie.js"></script>
-		<script src="scripts/form/modalEffects.js"></script>
-    <!--- form ends -->
-</body>
+        </div>
+
+        <!--- Form starts -->
+        <script src="scripts/form/classie.js"></script>
+        <script src="scripts/form/modalEffects.js"></script>
+        <!--- form ends -->
+    </body>
 </html>
