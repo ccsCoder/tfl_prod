@@ -455,7 +455,7 @@ option
 	width: 30%;
 	float: left;
 	margin-bottom: 40px;
-	margin-right: 5%;
+	padding-right: 15px;
 	cursor: pointer;
 	
 	-webkit-transition:all .4s ease-in-out;
